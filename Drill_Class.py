@@ -21,8 +21,10 @@ class Learner(Becodian): # Création de la classe learner et héritage de la cla
         self.campus = campus
 
     def introduce_learner(self): # Création de la fonction pour introduce le learner
-        indroduction = super().introduce_becodian() + self.promotion + self.campus # utilsation de super(). pour reprendre la fonction introduce_becodian() et les plus pour rajouté les arguments de notre classe
+        indroduction = super().introduce_becodian() + self.promotion +" " +self.campus # utilsation de super(). pour reprendre la fonction introduce_becodian() et les plus pour rajouté les arguments de notre classe
         return indroduction
 
 jeremy = Learner("Jeremy","Bouman 1","Charleroi") # objet jeremy de la classe learner son nom, sa promotion, campus.
 print(jeremy.introduce_learner()) # print l'objet jeremy avec la fonction introduce learner
+Renaud = Becodian("Renaud", True)
+print(Renaud.introduce_becodian())
