@@ -4,7 +4,7 @@ import unicodedata
 name_toto = "toto"
 age_toto = 10
 
-#unicode_toto = unicode(name_toto, "utf-8") #python 3 TOUTES string ests unicode !!!!!!!!!
+#unicode_toto = unicode(name_toto, "utf-8") #python 3 TOUTES string est unicode !!!!!!!!!
 
 float_age_toto = float(age_toto)
 

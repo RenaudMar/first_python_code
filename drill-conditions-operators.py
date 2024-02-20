@@ -78,7 +78,8 @@ def input_len():
 def money_converter():  #Creation de la fonction convertisseur
     euros_symbol = "E"   #Liste de variables présentes dans la fonction
     dollars_symbol = "$"
-    dollars = 0.92
+    euros = 0.92
+    dollars = 1.08
 
     input_currency = input("Choose E or $ \n") # Demande a l'user d'encoder 
 
@@ -91,11 +92,11 @@ def money_converter():  #Creation de la fonction convertisseur
     elif input_currency.upper() == dollars_symbol:
         
         user_amout_D = float(input("Please enter the amount you want to convert in dollars: \n"))
-        amountD_converter = user_amout_D * dollars
+        amountD_converter = user_amout_D * euros
         print("Your amount in euros is: " + str(amountD_converter))
 
     else:
         print("currency not know sorry :(")
 
-#money_converter()
+money_converter()
 
